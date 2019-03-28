@@ -1,13 +1,15 @@
 package com.ruleset.engine.enums;
 
-public enum Criteria {
+public enum ComparisonType {
   EQUALS("equals"),
   EXISTS("exists"),
-  CONTAINS("contains");
+  CONTAINS("contains"),
+  GREATER_THAN("greaterThan"),
+  LESS_THAN("lessThan");
 
   private String criteria;
 
-  Criteria(final String criteria) {
+  ComparisonType(final String criteria) {
     this.criteria = criteria;
   }
 
